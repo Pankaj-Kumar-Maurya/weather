@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("/bg1.png") no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url('/bg.jpg');
+  /* animation: backgroundScroll 10s steps(1, end) infinite;
+} */
+
+/* @keyframes backgroundScroll {
+  0% { background-position: 0% center; background-image: url('/bg1.jpg'); }
+  33% { background-position: -100% center; background-image: url('/bg.jpg'); }
+  66% { background-position: -200% center; background-image: url('/bg3.jpg'); }
+  100% { background-position: 0% center; background-image: url('/bg1.jpg'); }
+} */
+
+/* Main content wrapper */
+main {
+  flex: 1; /* Pushes the footer to the bottom if content is less */
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-bar-logo {
+  width: 4%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.432);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Content */
+.content {
+  text-align: left;
+
+  max-width: 600px;
+
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  width: 100%;
+}
