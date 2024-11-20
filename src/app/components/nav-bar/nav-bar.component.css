@@ -1,0 +1,59 @@
+/* General styles for the navigation bar */
+nav {
+  background-color: azure;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+}
+
+/* Hamburger button styling */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 780px) {
+  .menu {
+    display: none; /* Initially hide the menu */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: azure;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger button */
+  }
+
+  .menu.active {
+    display: flex; /* Show the menu when active */
+  }
+}

@@ -1,0 +1,17 @@
+<nav>
+  <div class="brand">
+    <p>Dark</p>
+  </div>
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Toggle Menu">
+    &#9776;
+  </button>
+  <div class="menu" [ngClass]="{ active: isMenuActive }">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Work</li>
+      <li>Game</li>
+      <li>Contacts</li>
+    </ul>
+  </div>
+</nav>
