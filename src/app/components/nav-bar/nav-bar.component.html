@@ -7,11 +7,15 @@
   </button>
   <div class="menu" [ngClass]="{ active: isMenuActive }">
     <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Work</li>
-      <li>Game</li>
-      <li>Contacts</li>
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/About">About</a></li>
+      <li>
+        <a routerLink="/Admin-Dashboard" routerLinkActive="router-link-active">
+          Admin Dashboard
+        </a>
+      </li>
+      <li><a routerLink="/Game">Game</a></li>
+      <li><a routerLink="/Contacts">Contacts</a></li>
     </ul>
   </div>
 </nav>

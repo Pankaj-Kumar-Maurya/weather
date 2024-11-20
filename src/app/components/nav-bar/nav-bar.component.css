@@ -16,6 +16,21 @@ ul {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  /* Ensure it spans multi-line */
+  display: inline-block; /* Use block if you want it to take up full width */
+}
+a:hover {
+  box-shadow: inset 100vw 0 0 0 #54b3d6; /* Use 100vw for full width */
+  color: white;
+}
 
 .menu {
   display: flex;
